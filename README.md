@@ -27,11 +27,7 @@ g++ -std=c++11 -pthread \
 ./redis_server
 ```
 
-Connect using the included client or a TCP client such as `netcat`:
-
-```bash
-nc localhost <port>
-```
+Connect using the included client, a TCP client, or Redis CLI
 
 ## Structure
 
