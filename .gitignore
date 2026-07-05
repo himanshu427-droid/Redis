@@ -1,1 +1,4 @@
 .vscode/
+redis_server
+client
+*.o
