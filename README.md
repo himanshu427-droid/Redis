@@ -15,10 +15,7 @@ A Redis-inspired in-memory key-value server written in C++.
 ## Build
 
 ```bash
-g++ -std=c++11 -pthread \
-    server.cpp hashtable.cpp avl.cpp heap.cpp \
-    zset.cpp thread_pool.cpp \
-    -o redis_server
+g++ $(ls *.cpp | grep -v "client.cpp") -o redis_server
 ```
 
 ## Run
