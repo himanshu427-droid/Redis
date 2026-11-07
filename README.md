@@ -8,9 +8,15 @@ A Redis-inspired in-memory key-value server written in C++.
 * In-memory key-value storage
 * Key expiration (TTL)
 * Sorted sets
+* Append-only persistence for string set/delete/expire commands
+* Pub/sub channels with `subscribe`, `unsubscribe`, and `publish`
+* Transactions with `multi`, `exec`, and `discard`
 * Custom hash table
 * AVL tree and heap implementations
 * Thread pool for background tasks
+
+The server stores its append-only log in `appendonly.aof` in the working
+directory and replays it on startup.
 
 ## Build
 
