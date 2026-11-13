@@ -1,0 +1,30 @@
+# python3 benchmark.py --requests 10000 --clients 4 --mode mixed
+Target:       127.0.0.1:6379
+Mode:         mixed
+Requests:     10000
+Clients:      4
+Elapsed:      4.315 s
+Throughput:   2,318 requests/s
+Mean latency: 1,602.54 us
+P50 latency:      1,244.34 us
+P95 latency:      3,025.98 us
+P99 latency:      7,322.32 us
+Max latency:  101,860.74 us
+Note: SET requests append to appendonly.aof.
+
+
+
+# python3 benchmark.py --requests 50000 --clients 32 -
+-mode mixed 
+Target:       127.0.0.1:6379
+Mode:         mixed
+Requests:     50000
+Clients:      32
+Elapsed:      25.445 s
+Throughput:   1,965 requests/s
+Mean latency: 15,459.63 us
+P50 latency:      12,019.43 us
+P95 latency:      34,025.00 us
+P99 latency:      64,566.00 us
+Max latency:  468,184.32 us
+Note: SET requests append to appendonly.aof.
